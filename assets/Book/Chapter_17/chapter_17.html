@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chapter_17</title>
+  <link rel="stylesheet" href="./chapter_17.css">
+</head>
+<body>
+
+  <h1>chapter_17</h1>
+
+  <!-- 1. Background Properties -->
+  <h2>1. CSS Background Properties</h2>
+  <p>Control image position, repeat, size, and more using background properties.</p>
+  <pre><code>background-image: url('image.jpg');
+background-repeat: no-repeat;
+background-position: right top;
+background-size: 100px 100px;</code></pre>
+  <div class="box background-example"></div>
+
+  <!-- 2. Gradient Backgrounds -->
+  <h2>2. CSS Gradient Backgrounds</h2>
+  <p>Create smooth transitions between colors using linear or radial gradients.</p>
+  <pre><code>background: linear-gradient(to right, #ff7e5f, #feb47b);</code></pre>
+  <div class="box gradient-example"></div>
+
+  <!-- 3. CSS Sprites -->
+  <h2>3. CSS Sprites</h2>
+  <p>Combine multiple images into one file to reduce HTTP requests. Use <code>background-position</code> to show specific parts.</p>
+  <pre><code>.icon-heart {
+  background-image: url('sprite.png');
+  background-position: -32px -32px;
+}</code></pre>
+  <div class="box sprite-container">
+    <div class="sprite-icon icon-lightning" title="Lightning"></div>
+    <div class="sprite-icon icon-heart" title="Heart"></div>
+    <div class="sprite-icon icon-star" title="Star"></div>
+  </div>
+
+</body>
+</html>

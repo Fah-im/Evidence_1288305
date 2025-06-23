@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter_13</title>
+ <link rel="stylesheet" href="./chapter_13.css">
+</head>
+<body>
+
+  <h1>Chapter_13</h1>
+
+  <h2>1. The Last Declaration Will Win</h2>
+  <p>When two CSS rules have the same specificity, the one declared last will override the others.</p>
+  <pre><code>&lt;style&gt;
+  .priority {
+    color: red;
+  }
+  .priority {
+    color: blue;
+  }
+&lt;/style&gt;
+&lt;p class="priority"&gt;This will be blue&lt;/p&gt;</code></pre>
+  <div class="output">
+    <p class="priority">This will be blue</p>
+  </div>
+
+  <h2>2. The More Specific Declaration Will Win</h2>
+  <p>ID selectors are more specific than class selectors, so they take precedence.</p>
+  <pre><code>&lt;style&gt;
+  .specific {
+    color: green;
+  }
+  #specific {
+    color: orange;
+  }
+&lt;/style&gt;
+&lt;p id="specific" class="specific"&gt;This will be orange&lt;/p&gt;</code></pre>
+  <div class="output">
+    <p id="specific" class="specific">This will be orange</p>
+  </div>
+
+  <h2>3. Inline Style is Preferred to Both Internal and External Style</h2>
+  <p>Inline styles override all rules defined in internal or external CSS files.</p>
+  <pre><code>&lt;p style="color: purple;"&gt;This will be purple&lt;/p&gt;</code></pre>
+  <div class="output">
+    <p style="color: purple;">This will be purple</p>
+  </div>
+
+  <h2>4. "!important" Declaration is the Strongest Rule</h2>
+  <p>The <code>!important</code> rule overrides all other rules, including inline styles.</p>
+  <pre><code>&lt;style&gt;
+  .important-output {
+    color: blue !important;
+  }
+  .important-output {
+    color: red !important;
+  }
+&lt;/style&gt;
+&lt;p class="important-output" style="color: green;"&gt;This will be red&lt;/p&gt;</code></pre>
+  <div class="output">
+    <p class="important-output" style="color: green;">This will be red</p>
+  </div>
+
+</body>
+</html>

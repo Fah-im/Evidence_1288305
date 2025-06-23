@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>chapter_21</title>
+<link rel="stylesheet" href="./chapter_21.css">
+</head>
+<body>
+
+  <h1>chapter_21</h1>
+
+  <!-- 1. CSS Variables -->
+  <h2>1. CSS Variables</h2>
+  <p>CSS variables (custom properties) store reusable values.</p>
+  <pre><code>:root {
+  --main-color: #3498db;
+  --padding: 10px;
+}
+
+.element {
+  background-color: var(--main-color);
+  padding: var(--padding);
+}</code></pre>
+  <div class="output">
+    <div class="variable-box">Using CSS Variables</div>
+  </div>
+
+  <!-- 2. CSS calc() -->
+  <h2>2. CSS Calculation</h2>
+  <p><code>calc()</code> allows you to perform calculations to determine CSS values.</p>
+  <pre><code>.element {
+  width: calc(100% - 100px);
+}</code></pre>
+  <div class="output">
+    <div class="calc-box">Width: calc(100% - 100px)</div>
+  </div>
+
+  <!-- 3. CSS Counters -->
+  <h2>3. CSS Counters</h2>
+  <p>CSS counters let you automatically number elements using pure CSS.</p>
+  <pre><code>.counter-list {
+  counter-reset: section;
+}
+
+.counter-list li::before {
+  counter-increment: section;
+  content: "Step " counter(section) ": ";
+}</code></pre>
+  <div class="output">
+    <ul class="counter-list">
+      <li>Prepare HTML</li>
+      <li>Add CSS</li>
+      <li>Review Output</li>
+    </ul>
+  </div>
+
+</body>
+</html>

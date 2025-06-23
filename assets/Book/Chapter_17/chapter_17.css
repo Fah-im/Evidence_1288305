@@ -1,0 +1,61 @@
+  body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f8f8f8;
+    }
+
+    h1 {
+      color: #2c3e50;
+    }
+
+    pre {
+      background: #f0f0f0;
+      padding: 10px;
+      overflow-x: auto;
+    }
+
+    .box {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    /* 1. CSS Background Properties */
+    .background-example {
+      background-image: url('./pexels-amir-1183434.jpg');
+      background-repeat: no-repeat;
+      background-position: right top;
+      background-size: 100px 100px;
+      height: 150px;
+    }
+
+    /* 2. CSS Gradient Backgrounds */
+    .gradient-example {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+      height: 100px;
+    }
+
+    /* 3. CSS Sprites (simulate with background-position) */
+    .sprite-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .sprite-icon {
+      width: 32px;
+      height: 32px;
+      background-image: url('./pexels-amir-1183434.jpg'); /* sample sprite sheet */
+      background-repeat: no-repeat;
+    }
+
+    .icon-star {
+      background-position: -64px -64px;
+    }
+
+    .icon-heart {
+      background-position: -32px -32px;
+    }
+
+    .icon-lightning {
+      background-position: 0px 0px;
+    }

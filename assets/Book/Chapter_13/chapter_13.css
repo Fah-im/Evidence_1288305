@@ -1,0 +1,37 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #fdfdfd;
+    }
+    h1 {
+      color: #333;
+    }
+    .output {
+      border: 1px dashed #888;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #f9f9f9;
+    }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    .priority {
+      color: red;
+    }
+    .priority {
+      color: blue;
+    }
+    .specific {
+      color: green;
+    }
+    #specific {
+      color: orange;
+    }
+    .important-output {
+      color: blue !important;
+    }
+    .important-output {
+      color: red !important;
+    }

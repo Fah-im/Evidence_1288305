@@ -1,0 +1,66 @@
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f0f0f0;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2a3f54;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-left: 4px solid #2a3f54;
+      overflow-x: auto;
+    }
+    .output {
+      margin: 15px 0 30px;
+    }
+
+    .responsive-box {
+      background: #3498db;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+
+    .grid div {
+      background: #2ecc71;
+      padding: 15px;
+      color: white;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .responsive-media {
+        background: #e74c3c;
+      }
+    }
+
+    .mobile-first {
+      padding: 15px;
+      background: lightgray;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-first {
+        background: lightgreen;
+      }
+    }
+
+    .desktop-first {
+      padding: 15px;
+      background: lightblue;
+    }
+
+    @media (max-width: 768px) {
+      .desktop-first {
+        background: orange;
+      }
+    }

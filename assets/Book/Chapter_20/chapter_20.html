@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chapter_20</title>
+ <link rel="stylesheet" href="./chapter_20.css">
+</head>
+<body>
+
+  <h1>Chapter_20</h1>
+
+  <h2>1. CSS Transitions</h2>
+
+  <h3>1.1 Basic Transitions</h3>
+  <p>Transition smoothly changes properties over a duration.</p>
+  <pre><code>background-color: #3498db;
+transition: background-color 0.5s ease;
+
+:hover {
+  background-color: #2ecc71;
+}</code></pre>
+  <div class="output">
+    <div class="box basic-transition">Hover Me</div>
+  </div>
+
+  <h3>1.2 Transition Delay</h3>
+  <p>Delay before the transition starts.</p>
+  <pre><code>transition: background-color 0.5s ease 1s;
+
+:hover {
+  background-color: #9b59b6;
+}</code></pre>
+  <div class="output">
+    <div class="box transition-delay">Hover Me (delay)</div>
+  </div>
+
+  <h3>1.3 Transition Timing Function</h3>
+  <p>Defines the pace of the transition.</p>
+  <pre><code>transition: transform 0.7s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+:hover {
+  transform: scale(1.3);
+}</code></pre>
+  <div class="output">
+    <div class="box timing-function">Hover Me (timing)</div>
+  </div>
+
+  <h3>1.4 Shorthand Transition Property</h3>
+  <p>Combine multiple transition properties.</p>
+  <pre><code>transition: all 0.6s ease-in-out;
+
+:hover {
+  background-color: #1abc9c;
+  transform: rotate(10deg);
+}</code></pre>
+  <div class="output">
+    <div class="box shorthand-transition">Hover Me (shorthand)</div>
+  </div>
+
+  <h2>2. CSS Animations</h2>
+
+  <h3>2.1 Two-step Keyframes</h3>
+  <p>Animate between two states.</p>
+  <pre><code>@keyframes twoStep {
+  0% { background-color: #2980b9; }
+  100% { background-color: #27ae60; }
+}
+
+animation-name: twoStep;
+animation-duration: 2s;
+animation-fill-mode: forwards;</code></pre>
+  <div class="output">
+    <div class="box two-step">Two-step Animation</div>
+  </div>
+
+  <h3>2.2 Multiple Keyframes</h3>
+  <p>Animate with several intermediate steps.</p>
+  <pre><code>@keyframes multiStep {
+  0% { background-color: #8e44ad; transform: translateX(0); }
+  50% { background-color: #d35400; transform: translateX(100px); }
+  100% { background-color: #16a085; transform: translateX(0); }
+}
+
+animation-iteration-count: infinite;</code></pre>
+  <div class="output">
+    <div class="box multi-step">Multiple Keyframes</div>
+  </div>
+
+  <h3>2.3 Animation Delay</h3>
+  <p>Delay before animation starts.</p>
+  <pre><code>animation-delay: 1.5s;</code></pre>
+  <div class="output">
+    <div class="box anim-delay">Delayed Animation</div>
+  </div>
+
+  <h3>2.4 Animation Iteration Count</h3>
+  <p>Number of times animation repeats.</p>
+  <pre><code>animation-iteration-count: 3;</code></pre>
+  <div class="output">
+    <div class="box anim-iteration">3 Iterations</div>
+  </div>
+
+  <h3>2.5 Animation Direction</h3>
+  <p>Normal or alternate playback direction.</p>
+  <pre><code>animation-direction: alternate;</code></pre>
+  <div class="output">
+    <div class="box anim-direction">Alternate Direction</div>
+  </div>
+
+  <h3>2.6 Animation Timing Function</h3>
+  <p>Speed curve of the animation.</p>
+  <pre><code>animation-timing-function: ease-in-out;</code></pre>
+  <div class="output">
+    <div class="box anim-timing">Ease-in-out Timing</div>
+  </div>
+
+  <h3>2.7 Shorthand Animation Property</h3>
+  <p>Combine multiple animation properties.</p>
+  <pre><code>animation: multiStep 3s ease-in-out infinite alternate;</code></pre>
+  <div class="output">
+    <div class="box shorthand-animation">Shorthand Animation</div>
+  </div>
+
+</body>
+</html>

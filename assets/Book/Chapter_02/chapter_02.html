@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter 02</title>
+  <link rel="stylesheet" href="./chapter02.css">
+</head>
+<body>
+
+  <h1>Chapter 02</h1>
+
+  <h2>1. Headings</h2>
+  <p>Headings from &lt;h1&gt; to &lt;h6&gt; define different levels of titles.</p>
+  <pre><code>&lt;h2&gt;Welcome by Fahim&lt;/h2&gt;</code></pre>
+  <div class="output">
+    <h2>Welcome by Fahim</h2>
+  </div>
+
+  <h2>2. Paragraphs</h2>
+  <p>Paragraphs are defined with the &lt;p&gt; tag.</p>
+  <pre><code>&lt;p&gt;Fahim writes a clean paragraph.&lt;/p&gt;</code></pre>
+  <div class="output">
+    <p>Fahim writes a clean paragraph.</p>
+  </div>
+
+  <h2>3. Hyperlinks</h2>
+  <p>Hyperlinks are created using the &lt;a&gt; tag.</p>
+  <pre><code>&lt;a href="https://example.com"&gt;Visit Fahim's Link&lt;/a&gt;</code></pre>
+  <div class="output">
+    <a href="https://www.facebook.com/Fahim.3655/" target="_blank">Visit Fahim's Link</a>
+  </div>
+
+  <h3>3.1 Internal Anchors</h3>
+  <p>Link to a section of the same page using an anchor.</p>
+  <pre><code>&lt;a href="#images"&gt;Jump to Images&lt;/a&gt;</code></pre>
+  <div class="output">
+    <a href="./pexels-amir-1183434.jpg" target="_blank">Jump to Images</a>
+  </div>
+
+  <h2 id="images">4. Images</h2>
+  <p>Display images using the &lt;img&gt; tag.</p>
+  <pre><code>&lt;img src="./pexels-amir-1183434.jpg" alt="cat's Image"&gt;</code></pre>
+  <div class="output">
+  <img src="./pexels-amir-1183434.jpg" alt="cat's Image" width="300">
+
+  </div>
+
+  <h3>4.1 Image Maps</h3>
+  <p>Clickable areas in an image.</p>
+  <pre><code>&lt;img src="map.png" usemap="#fahimmap" alt="Map"&gt;
+&lt;map name="fahimmap"&gt;
+  &lt;area shape="rect" coords="34,44,270,350" href="https://example.com" alt="Link"&gt;
+&lt;/map&gt;</code></pre>
+
+  <h2>5.1 Unordered List</h2>
+  <p>A list with bullet points.</p>
+  <pre><code>&lt;ul&gt;
+  &lt;li&gt;Fahim's Item 1&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+  <div class="output">
+    <ul><li>Fahim's Item 1</li></ul>
+  </div>
+
+  <h2>5.2 Ordered List</h2>
+  <p>A list with numbers.</p>
+  <pre><code>&lt;ol&gt;
+  &lt;li&gt;Step by Fahim&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+  <div class="output">
+    <ol><li>Step by Fahim</li></ol>
+  </div>
+
+  <h2>5.3 Description Lists</h2>
+  <p>List with terms and descriptions.</p>
+  <pre><code>&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Described by Fahim&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+  <div class="output">
+    <dl><dt>HTML</dt><dd>Described by Fahim</dd></dl>
+  </div>
+
+  <h2>6. Tables</h2>
+  <p>Used to display tabular data.</p>
+  <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Fahim&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+  <div class="output">
+    <table border="1">
+      <tr><th>Name</th></tr>
+      <tr><td>Fahim</td></tr>
+    </table>
+  </div>
+
+  <h2>7.1 Line Breaking</h2>
+  <p>Use &lt;br&gt; to break a line.</p>
+  <pre><code>Fahim&lt;br&gt;Hossen</code></pre>
+  <div class="output">
+    Fahim<br>Hossen
+  </div>
+
+  <h2>7.2 Thematic Breaking</h2>
+  <p>&lt;hr&gt; creates a horizontal line (section break).</p>
+  <pre><code>Fahim&lt;hr&gt;Hossen</code></pre>
+  <div class="output">
+    Fahim<hr>Hossen
+  </div>
+
+  <h2>8.1 &lt;progress&gt;</h2>
+  <p>Shows progress of a task.</p>
+  <pre><code>&lt;progress value="70" max="100"&gt;&lt;/progress&gt;</code></pre>
+  <div class="output">
+    <progress value="70" max="100"></progress>
+  </div>
+
+  <h2>8.2 &lt;meter&gt;</h2>
+  <p>Represents a scalar measurement.</p>
+  <pre><code>&lt;meter value="0.6"&gt;&lt;/meter&gt;</code></pre>
+  <div class="output">
+    <meter value="0.6"></meter>
+  </div>
+
+  <h2>9.1 &lt;code&gt;</h2>
+  <p>Inline code representation.</p>
+  <pre><code>&lt;code&gt;let fahim = true;&lt;/code&gt;</code></pre>
+  <div class="output">
+    <code>let fahim = true;</code>
+  </div>
+
+  <h2>9.2 &lt;pre&gt;</h2>
+  <p>Preserves spacing and formatting.</p>
+  <pre><code>&lt;pre&gt;
+  Hello Fahim
+     Code Indented
+&lt;/pre&gt;</code></pre>
+  <div class="output">
+    <pre>
+  Hello Fahim
+     Code Indented
+    </pre>
+  </div>
+
+  <h2>10. Iframes</h2>
+  <p>Embed another webpage.</p>
+  <pre><code>&lt;iframe src="https://example.com" width="200" height="100"&gt;&lt;/iframe&gt;</code></pre>
+  <div class="output">
+    <iframe src="https://example.com" width="200" height="100"></iframe>
+  </div>
+
+  <h2>11. HTML Entities</h2>
+  <p>Special characters using entities.</p>
+  <pre><code>&amp;copy; &amp;hearts; Fahim</code></pre>
+  <div class="output">
+    &copy; &hearts; Fahim
+  </div>
+
+</body>
+</html>

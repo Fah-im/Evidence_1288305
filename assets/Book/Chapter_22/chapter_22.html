@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chapter_22</title>
+<link rel="stylesheet" href="./chapter_22.css">
+</head>
+<body>
+
+  <h1>chapter_22</h1>
+
+  <h2>1. Responsive Web Design (RWD)</h2>
+  <p>RWD makes websites look good on all devices by adjusting layout using flexible grids and media queries.</p>
+
+  <h2>2. RWD Viewport</h2>
+  <p>The viewport meta tag helps control layout on mobile browsers.</p>
+  <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+
+  <h2>3. CSS Media Queries</h2>
+  <p>Media queries apply different styles depending on screen size or device features.</p>
+  <pre><code>@media (max-width: 600px) {
+  .responsive-media {
+    background-color: red;
+  }
+}</code></pre>
+  <div class="output">
+    <div class="responsive-box responsive-media">Resize the screen to see media query in action</div>
+  </div>
+
+  <h2>4. RWD Grid Media</h2>
+  <p>Grid layout adjusts automatically using <code>auto-fit</code> and <code>minmax</code>.</p>
+  <pre><code>.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}</code></pre>
+  <div class="output">
+    <div class="grid">
+      <div>Box 1</div>
+      <div>Box 2</div>
+      <div>Box 3</div>
+      <div>Box 4</div>
+    </div>
+  </div>
+
+  <h2>5. Mobile-first vs Desktop-first</h2>
+  <p><strong>Mobile-first</strong> designs start with small screens and expand using <code>min-width</code> media queries.<br>
+     <strong>Desktop-first</strong> designs start large and shrink using <code>max-width</code>.</p>
+
+  <h3>Mobile-first Example</h3>
+  <pre><code>.box {
+  background: lightgray;
+}
+
+@media (min-width: 768px) {
+  .box {
+    background: lightgreen;
+  }
+}</code></pre>
+  <div class="output">
+    <div class="mobile-first">Mobile-first design</div>
+  </div>
+
+  <h3>Desktop-first Example</h3>
+  <pre><code>.box {
+  background: lightblue;
+}
+
+@media (max-width: 768px) {
+  .box {
+    background: orange;
+  }
+}</code></pre>
+  <div class="output">
+    <div class="desktop-first">Desktop-first design</div>
+  </div>
+
+</body>
+</html>

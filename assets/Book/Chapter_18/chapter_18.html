@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>chapter_18</title>
+  <link rel="stylesheet" href="./chapter_18.css">
+</head>
+<body>
+
+  <h1>chapter_18</h1>
+
+  <h2>1. Display vs Visibility</h2>
+  <p><strong>Display</strong> removes the element from layout; <strong>visibility</strong> hides it but keeps space.</p>
+  <pre><code>.hidden-box {
+  visibility: hidden;
+}
+.visible-box {
+  display: block;
+}</code></pre>
+  <div class="box visible-box">I'm visible</div>
+  <div class="box hidden-box">You can't see me, but I'm here</div>
+
+  <h2>2. CSS object-fit</h2>
+  <p>Controls how images are resized inside a container.</p>
+  <pre><code>object-fit: cover;</code></pre>
+  <div class="box object-fit-box">
+    <img src="./pexels-amir-1183434.jpg" alt="Fit image" />
+  </div>
+
+  <h2>3. CSS overflow</h2>
+  <p>Handles content that exceeds the element's size.</p>
+  <pre><code>overflow: auto;</code></pre>
+  <div class="box overflow-box">
+    This is a scrollable box. This is a scrollable box. This is a scrollable box. This is a scrollable box. This is a scrollable box.This is a scrollable box.This is a scrollable box.This is a scrollable box.This is a scrollable box.This is a scrollable box.
+  </div>
+
+  <h2>4. CSS Shadows</h2>
+  <p>Add depth to elements using shadow effects.</p>
+  <pre><code>box-shadow: 5px 5px 10px rgba(0,0,0,0.4);</code></pre>
+  <div class="box shadow-box">I have a shadow!</div>
+
+  <h2>5. CSS Multiple Columns</h2>
+  <p>Divide text into multiple columns.</p>
+  <pre><code>column-count: 2;
+column-gap: 30px;</code></pre>
+  <div class="box columns-box">
+    This text is split into two columns. Column layout is useful for news articles, magazines, and reports.
+    It helps organize large blocks of text more efficiently and makes reading easier.
+  </div>
+
+  <h2>6. CSS Tables</h2>
+  <p>Style tables to display structured data.</p>
+  <pre><code>table, th, td {
+  border: 1px solid #999;
+}</code></pre>
+  <div class="box">
+    <table>
+      <tr><th>Name</th><th>Role</th></tr>
+      <tr><td>Fahim</td><td>Developer</td></tr>
+      <tr><td>Neo</td><td>Designer</td></tr>
+    </table>
+  </div>
+
+  <h2>7. CSS Lists</h2>
+  <p>Customize bullet styles in lists.</p>
+  <pre><code>list-style-type: square;</code></pre>
+  <div class="box">
+    <ul class="custom-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+
+  <h2>8. CSS Transforms</h2>
+  <p>Apply transformations like rotate and scale.</p>
+  <pre><code>transform: rotate(10deg) scale(1.1);</code></pre>
+  <div class="box transform-box"></div>
+
+  <h2>9. Rotates an Element</h2>
+  <p>Use <code>transform: rotate(deg);</code> to rotate elements.</p>
+  <pre><code>transform: rotate(45deg);</code></pre>
+  <div class="box rotate-box"></div>
+
+  <h2>10. Skews an Element</h2>
+  <p>Use <code>transform: skew(xdeg, ydeg);</code> to skew elements along axes.</p>
+  <pre><code>transform: skew(20deg, 10deg);</code></pre>
+  <div class="box skew-box"></div>
+
+</body>
+</html>

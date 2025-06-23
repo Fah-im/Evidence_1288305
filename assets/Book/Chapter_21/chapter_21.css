@@ -1,0 +1,53 @@
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2a3f54;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      overflow-x: auto;
+      border-left: 4px solid #2a3f54;
+      white-space: pre-wrap;
+    }
+    .output {
+      margin: 10px 0 30px;
+    }
+
+    /* CSS Variables Example */
+    .variable-box {
+      --main-color: #3498db;
+      --padding: 10px;
+      background-color: var(--main-color);
+      padding: var(--padding);
+      color: white;
+      border-radius: 8px;
+      width: 200px;
+      text-align: center;
+    }
+
+    /* CSS Calculation Example */
+    .calc-box {
+      width: calc(100% - 100px);
+      background-color: #2ecc71;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* CSS Counter Example */
+    .counter-list {
+      counter-reset: section;
+    }
+
+    .counter-list li::before {
+      counter-increment: section;
+      content: "Step " counter(section) ": ";
+      font-weight: bold;
+      color: #e67e22;
+    }

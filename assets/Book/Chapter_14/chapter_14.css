@@ -1,0 +1,48 @@
+  body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      overflow-x: auto;
+    }
+    .output {
+      border: 1px dashed #999;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #fafafa;
+    }
+    .box-content {
+      box-sizing: content-box;
+      width: 200px;
+      padding: 20px;
+      border: 2px solid blue;
+    }
+    .box-border {
+      box-sizing: border-box;
+      width: 200px;
+      padding: 20px;
+      border: 2px solid red;
+    }
+    .margin-example {
+      background-color: lightblue;
+      margin: 20px;
+    }
+    .outline-example {
+      outline: 2px dashed red;
+      padding: 10px;
+    }
+    .border-example {
+      border: 3px solid green;
+      padding: 10px;
+    }
+    .padding-example {
+      background-color: lightyellow;
+      padding: 30px;
+    }
+    .dimension-example {
+      background-color: lavender;
+      width: 150px;
+      height: 100px;
+    }

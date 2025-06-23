@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter_07</title>
+
+</head>
+<body>
+
+<h1>Chapter_07</h1>
+<p>This page demonstrates key SVG and Canvas features with code and output examples.</p>
+
+<h2>SVG Graphics</h2>
+
+<div class="example">
+  <h3>Rectangle</h3>
+  <pre>&lt;svg width="100" height="100"&gt;
+  &lt;rect x="10" y="10" width="80" height="60" stroke="red" stroke-width="2" fill="yellow" /&gt;
+&lt;/svg&gt;</pre>
+  <svg width="100" height="100">
+    <rect x="10" y="10" width="80" height="60" stroke="red" stroke-width="2" fill="yellow" />
+  </svg>
+</div>
+
+<div class="example">
+  <h3>Circle</h3>
+  <pre>&lt;svg width="100" height="100"&gt;
+  &lt;circle cx="50" cy="50" r="40" stroke="red" stroke-width="2" fill="yellow" /&gt;
+&lt;/svg&gt;</pre>
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="red" stroke-width="2" fill="yellow" />
+  </svg>
+</div>
+
+<div class="example">
+  <h3>Line</h3>
+  <pre>&lt;svg width="100" height="100"&gt;
+  &lt;line x1="0" y1="0" x2="100" y2="50" stroke="red" stroke-width="2" /&gt;
+&lt;/svg&gt;</pre>
+  <svg width="100" height="100">
+    <line x1="0" y1="0" x2="100" y2="50" stroke="red" stroke-width="2" />
+  </svg>
+</div>
+
+<div class="example">
+  <h3>Gradient</h3>
+  <pre>&lt;svg height="100" width="200"&gt;
+  &lt;defs&gt;
+    &lt;linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%"&gt;
+      &lt;stop offset="0%" stop-color="yellow" /&gt;
+      &lt;stop offset="100%" stop-color="red" /&gt;
+    &lt;/linearGradient&gt;
+  &lt;/defs&gt;
+  &lt;rect width="200" height="100" fill="url(#grad)" /&gt;
+&lt;/svg&gt;</pre>
+  <svg height="100" width="200">
+    <defs>
+      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="yellow" />
+        <stop offset="100%" stop-color="red" />
+      </linearGradient>
+    </defs>
+    <rect width="200" height="100" fill="url(#grad)" />
+  </svg>
+</div>
+
+<h2>Canvas Examples</h2>
+
+<div class="example">
+  <h3>Text</h3>
+  <pre>ctx.font = "20px Arial";
+ctx.fillText("Fahim draws text", 10, 50);</pre>
+  <canvas id="textCanvas" width="300" height="100" style="border:1px solid #ccc;"></canvas>
+</div>
+
+<div class="example">
+  <h3>Line</h3>
+  <pre>ctx.moveTo(0, 0);
+ctx.lineTo(300, 100);
+ctx.stroke();</pre>
+  <canvas id="lineCanvas" width="300" height="100" style="border:1px solid #ccc;"></canvas>
+</div>
+
+<div class="example">
+  <h3>Circle</h3>
+  <pre>ctx.arc(150, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();</pre>
+  <canvas id="circleCanvas" width="300" height="100" style="border:1px solid #ccc;"></canvas>
+</div>
+
+<script>
+  const textCtx = document.getElementById('textCanvas').getContext('2d');
+  textCtx.font = '20px Arial';
+  textCtx.fillText('Fahim draws text', 10, 50);
+
+  const lineCtx = document.getElementById('lineCanvas').getContext('2d');
+  lineCtx.moveTo(0, 0);
+  lineCtx.lineTo(300, 100);
+  lineCtx.stroke();
+
+  const circleCtx = document.getElementById('circleCanvas').getContext('2d');
+  circleCtx.beginPath();
+  circleCtx.arc(150, 50, 40, 0, 2 * Math.PI);
+  circleCtx.stroke();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter_12</title>
+<link rel="stylesheet" href="./chapter_12.css">
+</head>
+<body>
+
+<h1>Chapter_12</h1>
+
+<div class="section">
+  <h2>1. Universal Selector (*)</h2>
+  <p>Selects all elements on the page.</p>
+  <pre>
+* {
+  color: darkblue;
+}
+  </pre>
+  <div class="output">
+    <p>This paragraph is affected by the universal selector.</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>2. Type Selector</h2>
+  <p>Targets elements by tag name.</p>
+  <pre>
+p {
+  background: #eef;
+}
+  </pre>
+  <div class="output">
+    <p>This &lt;p&gt; tag has a light blue background.</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>3. ID Selector</h2>
+  <p>Targets a single element using its ID.</p>
+  <pre>
+#special {
+  color: green;
+}
+  </pre>
+  <div class="output">
+    <p id="special">This is styled by ID selector.</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>4. Class Selector</h2>
+  <p>Selects elements with a given class name.</p>
+  <pre>
+.red-text {
+  color: red;
+}
+  </pre>
+  <div class="output">
+    <p class="red-text">This is red using a class selector.</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>5. Multiple Class Selector</h2>
+  <p>Targets elements that have **both** classes.</p>
+  <pre>
+.big.red {
+  font-size: 24px;
+  color: red;
+}
+  </pre>
+  <div class="output">
+    <p class="big red">This is big and red using multiple class selector.</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>6. CSS Pseudo-Class (:hover, :first-child)</h2>
+  <p>Targets elements in a specific state.</p>
+  <pre>
+button:hover {
+  background-color: yellow;
+}
+  </pre>
+  <div class="output">
+    <button>Hover over me</button>
+  </div>
+</div>
+
+<div class="section">
+  <h2>7. CSS Pseudo-Element (::first-letter)</h2>
+  <p>Targets part of an element (like first letter).</p>
+  <pre>
+p::first-letter {
+  font-size: 200%;
+  color: red;
+}
+  </pre>
+  <div class="output">
+    <p>This paragraph has a large red first letter.</p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>8. Combined Selector (descendant, child, sibling)</h2>
+  <p>Combines selectors to match based on hierarchy.</p>
+  <pre>
+div > span {
+  color: purple;
+}
+  </pre>
+  <div class="output">
+    <div>
+      <span>This span is a direct child of div.</span>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>9. Attribute Selector</h2>
+  <p>Targets elements with specific attributes.</p>
+  <pre>
+input[type="text"] {
+  border: 2px solid blue;
+}
+  </pre>
+  <div class="output">
+    <input type="text" placeholder="Blue border from attribute selector">
+  </div>
+</div>
+
+<div class="section">
+  <h2>10. Selector Grouping</h2>
+  <p>Applies the same style to multiple selectors.</p>
+  <pre>
+h2, p {
+  font-family: 'Georgia', serif;
+}
+  </pre>
+  <div class="output">
+    <h2>Heading using Georgia</h2>
+    <p>Paragraph using Georgia</p>
+  </div>
+</div>
+
+</body>
+</html>

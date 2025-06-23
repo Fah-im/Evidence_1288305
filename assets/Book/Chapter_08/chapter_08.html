@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chapter_08</title>
+ <link rel="stylesheet" href="./chapter_08.css">
+</head>
+<body>
+
+  <h1>chapter_08</h1>
+
+  <div class="section">
+    <h2>1. Data URIs</h2>
+    <p>Data URIs let you embed small files like images directly into HTML using base64 encoding.</p>
+    <pre>&lt;img src="data:image/svg+xml;base64,..." alt="circle" /&gt;</pre>
+    <div class="output">
+      <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNSIgY3k9IjE1IiByPSIxMiIgc3R5bGU9ImZpbGw6I2ZhaGltOyIgLz48L3N2Zz4=" alt="Fahim's Circle" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>2. Block Elements</h2>
+    <p>Block elements start on a new line and take up the full width.</p>
+    <pre>&lt;div&gt;This is a block element&lt;/div&gt;
+&lt;p&gt;Another block element&lt;/p&gt;</pre>
+    <div class="output">
+      <div style="background: #ddeeff; padding: 5px;">This is a block element</div>
+      <p style="background: #cceedd; padding: 5px;">Another block element</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>3. Inline Elements</h2>
+    <p>Inline elements flow with the text and only take up as much space as needed.</p>
+    <pre>&lt;span&gt;Inline 1&lt;/span&gt; &lt;span&gt;Inline 2&lt;/span&gt;</pre>
+    <div class="output">
+      <span style="color: red;">Inline 1</span> <span style="color: blue;">Inline 2</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>4. Inline-Block Elements</h2>
+    <p>Inline-block elements are like inline elements, but you can set width and height.</p>
+    <pre>
+&lt;div class="inline-box"&gt;Box 1&lt;/div&gt;
+&lt;div class="inline-box"&gt;Box 2&lt;/div&gt;</pre>
+    <div class="output">
+      <div class="inline-box">Box 1</div>
+      <div class="inline-box">Box 2</div>
+    </div>
+  </div>
+
+</body>
+</html>

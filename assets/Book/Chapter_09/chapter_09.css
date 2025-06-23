@@ -1,0 +1,29 @@
+  body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f7f9fa;
+      color: #333;
+    }
+    .section {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-left: 4px solid #4CAF50;
+      overflow-x: auto;
+    }
+    .output {
+      background: #fdfdfd;
+      border: 1px dashed #aaa;
+      padding: 15px;
+      margin-top: 10px;
+    }
+    input, button, textarea {
+      margin-top: 5px;
+      padding: 5px;
+    }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chapter_11</title>
+  <link rel="stylesheet" href="./Chapter_11.css">
+</head>
+<body>
+
+  <h1>Chapter_11</h1>
+
+  <!-- 1. CSS Syntax -->
+  <div class="section">
+    <h2>1. CSS Syntax</h2>
+    <p>CSS syntax consists of a selector and a declaration block.</p>
+    <pre>
+selector {
+  property: value;
+}
+    </pre>
+    <div class="output" style="color: blue;">
+      This paragraph is blue using CSS syntax!
+    </div>
+    <style>
+      .section:nth-of-type(1) .output {
+        color: blue;
+      }
+    </style>
+  </div>
+
+  <!-- 2. Comments in CSS -->
+  <div class="section">
+    <h2>2. Comments in CSS</h2>
+    <p>CSS comments are written inside <code>/* ... */</code> and ignored by the browser.</p>
+    <pre>
+/* This is a CSS comment */
+p {
+  color: green;
+}
+    </pre>
+    <div class="output" style="color: green;">
+      This is a green paragraph. Comment did not affect it.
+    </div>
+  </div>
+
+  <!-- 3. CSS Units -->
+  <div class="section">
+    <h2>3. CSS Units</h2>
+    <p>Common CSS units include <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>vh</code>, and <code>vw</code>.</p>
+    <pre>
+.box {
+  width: 50%;
+  font-size: 1.5em;
+}
+    </pre>
+    <div class="output">
+      <div style="width: 50%; font-size: 1.5em; background: #ddd;">This box is 50% wide and 1.5em in font size.</div>
+    </div>
+  </div>
+
+  <!-- 4. Shorthand Properties -->
+  <div class="section">
+    <h2>4. Shorthand Properties</h2>
+    <p>Shorthand properties combine multiple properties into one.</p>
+    <pre>
+/* Instead of writing: */
+margin-top: 10px;
+margin-right: 15px;
+margin-bottom: 10px;
+margin-left: 15px;
+
+/* Use shorthand: */
+margin: 10px 15px;
+    </pre>
+    <div class="output">
+      <div class="shorthand-box">Shorthand margin applied.</div>
+    </div>
+    <style>
+      .shorthand-box {
+        margin: 10px 15px;
+      }
+    </style>
+  </div>
+
+  <!-- 5. Where Do We Put Our CSS -->
+  <div class="section">
+    <h2>5. Where Do We Put Our CSS?</h2>
+    <p>You can write CSS in 3 places:</p>
+    <ul>
+      <li><strong>Inline</strong> – directly inside HTML tags.</li>
+      <li><strong>Internal</strong> – inside a &lt;style&gt; tag in the &lt;head&gt;.</li>
+      <li><strong>External</strong> – linked from a separate .css file.</li>
+    </ul>
+    <pre>
+&lt;style&gt;
+  p { color: purple; }
+&lt;/style&gt;
+
+&lt;p style="color: red;"&gt;Inline style&lt;/p&gt;
+    </pre>
+    <div class="output">
+      <p style="color: red;">This text is red (inline style).</p>
+      <p style="color: purple;">This text is purple (internal style).</p>
+    </div>
+  </div>
+
+  <!-- 6. User Agent Style Sheets -->
+  <div class="section">
+    <h2>6. User Agent Style Sheets</h2>
+    <p>Browsers apply default CSS styles to elements (called user agent styles).</p>
+    <pre>
+/* Browsers render headings bold by default */
+&lt;h2&gt;Hello World&lt;/h2&gt;
+    </pre>
+    <div class="output">
+      <h2>This heading is bold by default (user agent style).</h2>
+    </div>
+  </div>
+
+</body>
+</html>

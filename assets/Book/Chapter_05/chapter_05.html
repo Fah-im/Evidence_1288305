@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>chapter_05</title>
+  <link rel="stylesheet" href="./chapter_05.css">
+</head>
+<body>
+
+  <h1>chapter_05</h1>
+
+  <h2>1. HTML Form Elements</h2>
+
+  <h3>1.1 &lt;input&gt; and &lt;label&gt;</h3>
+  <pre><code>&lt;label for="fname"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;</code></pre>
+  <div class="output">
+    <label for="fname">Name:</label>
+    <input type="text" id="fname" name="fname">
+  </div>
+
+  <h3>1.2 &lt;textarea&gt;</h3>
+  <pre><code>&lt;textarea name="message" rows="4" cols="30"&gt;Hi from Fahim!&lt;/textarea&gt;</code></pre>
+  <div class="output">
+    <textarea name="message" rows="4" cols="30">Hi from Fahim!</textarea>
+  </div>
+
+  <h3>1.3 &lt;select&gt; and &lt;option&gt;</h3>
+  <pre><code>&lt;select name="fruit"&gt;
+  &lt;option&gt;Apple&lt;/option&gt;
+  &lt;option&gt;Banana&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+  <div class="output">
+    <select name="fruit">
+      <option>Apple</option>
+      <option>Banana</option>
+    </select>
+  </div>
+
+  <h3>1.4 &lt;button&gt;</h3>
+  <pre><code>&lt;button&gt;Click Me&lt;/button&gt;</code></pre>
+  <div class="output">
+    <button>Click Me</button>
+  </div>
+
+  <h3>1.5 &lt;fieldset&gt; and &lt;legend&gt;</h3>
+  <pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;User Info&lt;/legend&gt;
+  &lt;input type="text" placeholder="Fahim"&gt;
+&lt;/fieldset&gt;</code></pre>
+  <div class="output">
+    <fieldset>
+      <legend>User Info</legend>
+      <input type="text" placeholder="Fahim">
+    </fieldset>
+  </div>
+
+  <h3>1.6 &lt;datalist&gt;</h3>
+  <pre><code>&lt;input list="browsers" name="browser"&gt;
+&lt;datalist id="browsers"&gt;
+  &lt;option value="Chrome"&gt;
+  &lt;option value="Firefox"&gt;
+&lt;/datalist&gt;</code></pre>
+  <div class="output">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+    </datalist>
+  </div>
+
+  <h2>2. HTML Input Types</h2>
+
+  <h3>2.1 Buttons</h3>
+  <div class="output">
+    <input type="button" value="Fahim's Button">
+  </div>
+
+  <h3>2.2 Texts</h3>
+  <div class="output">
+    <input type="text" placeholder="Enter name">
+  </div>
+
+  <h3>2.3 Numbers</h3>
+  <div class="output">
+    <input type="number" min="1" max="100">
+  </div>
+
+  <h3>2.4 Options (Radio & Checkbox)</h3>
+  <div class="output">
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <br>
+    <label><input type="checkbox"> Subscribe</label>
+  </div>
+
+  <h3>2.5 Files</h3>
+  <div class="output">
+    <input type="file">
+  </div>
+
+  <h3>2.6 Date and Time</h3>
+  <div class="output">
+    <input type="date">
+    <input type="time">
+  </div>
+
+  <h3>2.7 Colors</h3>
+  <div class="output">
+    <input type="color">
+  </div>
+
+  <h2>3. HTML Input Attributes</h2>
+  <p>Attributes like placeholder, value, readonly, disabled enhance inputs.</p>
+  <div class="output">
+    <input type="text" placeholder="Fahim" value="Readonly Example" readonly>
+    <input type="text" value="Disabled" disabled>
+  </div>
+
+  <h2>4. Form Validation</h2>
+
+  <h3>4.1 minlength</h3>
+  <div class="output">
+    <input type="text" minlength="5" placeholder="Min 5 characters">
+  </div>
+
+  <h3>4.2 maxlength</h3>
+  <div class="output">
+    <input type="text" maxlength="10" placeholder="Max 10 characters">
+  </div>
+
+  <h3>4.3 min and max</h3>
+  <div class="output">
+    <input type="number" min="18" max="30" placeholder="18 to 30">
+  </div>
+
+  <h3>4.4 required</h3>
+  <div class="output">
+    <input type="email" placeholder="Required email" required>
+  </div>
+
+  <h3>4.5 pattern</h3>
+  <div class="output">
+    <input type="text" pattern="[A-Za-z]{3,}" placeholder="Only letters, min 3">
+  </div>
+
+  <h3>4.6 Styles for Invalid Inputs</h3>
+  <p>Invalid fields get a red border using CSS <code>input:invalid</code>.</p>
+  <div class="output">
+    <input type="email" placeholder="Try typing wrong email">
+  </div>
+
+</body>
+</html>

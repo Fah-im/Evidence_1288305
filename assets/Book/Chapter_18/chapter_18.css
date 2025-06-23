@@ -1,0 +1,94 @@
+  body {
+      font-family: sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    h2 {
+      color: #2c3e50;
+    }
+
+    pre {
+      background: #eee;
+      padding: 10px;
+      overflow-x: auto;
+    }
+
+    .box {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background: white;
+    }
+
+    /* Display vs Visibility */
+    .visible-box {
+      display: block;
+    }
+    .hidden-box {
+      visibility: hidden;
+    }
+
+    /* Object-fit */
+    .object-fit-box img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    /* Overflow */
+    .overflow-box {
+      width: 200px;
+      height: 100px;
+      overflow: auto;
+      border: 1px solid black;
+    }
+
+    /* Shadow */
+    .shadow-box {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Multi-columns */
+    .columns-box {
+      column-count: 2;
+      column-gap: 30px;
+    }
+
+    /* Table */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+    }
+
+    /* List */
+    ul.custom-list {
+      list-style-type: square;
+    }
+
+    /* Transform */
+    .transform-box {
+      width: 100px;
+      height: 100px;
+      background: coral;
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    .rotate-box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      transform: rotate(45deg);
+    }
+
+    .skew-box {
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+      transform: skew(20deg, 10deg);
+    }
